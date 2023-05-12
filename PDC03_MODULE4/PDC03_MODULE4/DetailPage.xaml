@@ -3,10 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PDC03_MODULE4.DetailPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Name" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Text="{Binding Name}" FontSize="Medium" FontAttributes="Bold"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Age" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Text="{Binding Age}" FontSize="Medium" FontAttributes="Bold"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Occupation" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Text="{Binding Occupation}" FontSize="Medium" FontAttributes="Bold"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Country" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Text="{Binding Country}" FontSize="Medium" FontAttributes="Bold"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

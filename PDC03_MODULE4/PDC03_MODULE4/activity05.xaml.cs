@@ -21,7 +21,13 @@ namespace PDC03_MODULE4
         }
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-
+            if(listView.SelectedItem != null)
+            {
+                var detailPage = new DetailPage();
+                detailPage.BindingContext = e.SelectedItem as Contacts;
+                listView.SelectedItem = null;
+                await Navigation.PushModalAsync(detailPage);
+            }
         }
 
         void SetupData()
@@ -67,7 +73,7 @@ namespace PDC03_MODULE4
             {
                 Name = "Nathaniel Allapitan",
                 Age = 25,
-                Occupation = "Testes",
+                Occupation = "Tester",
                 Country = "Philippines"
 
             });
