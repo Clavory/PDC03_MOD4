@@ -8,14 +8,14 @@
             <ListView x:Name="EmployeeView">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <!--<TextCell Text="{Binding DisplayName}" TextColor="MediumPurple"
-                                  Detail="{Binding Position}" DetailColor="HotPink"/>-->
+                        <!---<TextCell Text="{Binding DisplayName}" TextColor="MediumPurple"
+                                  Detail="{Binding Position}" DetailColor="HotPink"/> -->
 
                         <ViewCell>
                             <ViewCell.ContextActions>
-                                <MenuItem Text="Add" Clicked="Add.item"/>
-                                <MenuItem Text="Edit" Clicked="Edit.item"/>
-                                <MenuItem Text="Delete" Clicked="Delete.item"/>
+                                <MenuItem Text="Add" Clicked="Add_item"/>
+                                <MenuItem Text="Edit" Clicked="Edit_item"/>
+                                <MenuItem Text="Delete" Clicked="Delete_item"/>
                             </ViewCell.ContextActions>
 
                             <Grid>
