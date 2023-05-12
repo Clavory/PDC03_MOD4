@@ -20,6 +20,7 @@
                 <Label Text="Country" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center"/>
                 <Label Text="{Binding Country}" FontSize="Medium" FontAttributes="Bold"/>
             </StackLayout>
+            <Button x:Name="closebutton" Text="Close" Clicked="OnCloseButton"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

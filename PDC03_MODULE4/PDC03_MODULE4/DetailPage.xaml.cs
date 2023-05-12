@@ -16,5 +16,10 @@ namespace PDC03_MODULE4
         {
             InitializeComponent();
         }
+
+        async void OnCloseButton(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
+        }
     }
 }
